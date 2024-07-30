@@ -41,7 +41,7 @@ git clone git@github.com:AlexCUkah/Data-Analysis.git
 
 bash
 
-cd Data_Analysis_Test
+cd Data_Analysis
 
 3. Create a virtual environment:
 

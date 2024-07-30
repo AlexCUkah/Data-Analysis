@@ -41,6 +41,11 @@ def save_to_csv(file_name, distance, speed_to, speed_from, average_speed):
     speed_from (float): The speed from point A (mph).
     average_speed (float): The average speed (mph).
     """
+    # Check if the directory exists, if not, create it
+    directory = os.path.dirname(file_name)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
     # Check if the file already exists
     file_exists = os.path.isfile(file_name)
 
@@ -66,7 +71,8 @@ def main():
     print(f"The average speed for the round trip is {average_speed} mph.")
 
     # Save the results to a CSV file
-    save_to_csv('Average Speed Of Car Calculation/average_speed.csv', distance, speed_to, speed_from, average_speed)
+    file_name = os.path.join('Average Speed Of Car Calculation', 'average_speed.csv')
+    save_to_csv(file_name, distance, speed_to, speed_from, average_speed)
 
 
 if __name__ == "__main__":

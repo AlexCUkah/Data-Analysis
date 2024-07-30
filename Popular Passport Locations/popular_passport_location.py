@@ -3,10 +3,14 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from config import EXCEL_FILE_PATH
+
+
 def save_sorted_data_to_csv(data, filename='passport_search_volume_sorted.csv'):
     # Save the sorted data to a CSV file
     data.to_csv(filename, index=False)
     print(f"Data has been saved to {filename}")
+
+
 def find_popular_passport_location(excel):
     # Load the data from the Excel file
     # Row skipped because of format in Excel document, if table starts at A1 put skiprows=0

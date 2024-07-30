@@ -10,7 +10,6 @@ from parsel import Selector
 
 scrapfly = ScrapflyClient(key=" scp-live-b0d3f03835104405bf5357abfb4c691a ")
 
-
 async def request_hotels_page(
     query,
     checkin: str = "",
