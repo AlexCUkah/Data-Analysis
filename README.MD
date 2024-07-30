@@ -5,14 +5,24 @@ This repository contains data analysis projects for the Junior Data Analyst asse
 ## Project Structure
 
 - **Average Speed Of Car Calculation**
+  - `average_speed.csv`
+  - `calculate_average_speed_of_car.py`
 - **Cheapest Winter Hotel**
+    - `average_prices_by_state.png`
+    - `cheapest_winter_hotel.py`
+    - `hotel_prices.csv`
+    - `ranked_states.csv`
+    - `states_and_cities.py`
+    - `top_5_states.csv`
+    - `top_5_states.png`
 - **data**
   - `Junior Data Analyst Questions.xlsx`
 - **Median Age In Oxford**
+    - `age_distribution.csv`
+    - `median_age_oxford.py`
 - **Popular Passport Locations**
-  - **output**
     - `passport_search_volume_sorted.csv`
-  - `popular_passport_location.py`
+    - `popular_passport_location.py`
 - `config.py`
 - `IGNORE_html_parser.py`
 - `IGNORE_play.py`
