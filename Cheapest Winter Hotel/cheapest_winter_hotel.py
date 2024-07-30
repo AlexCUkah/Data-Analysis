@@ -57,7 +57,7 @@ def get_hotel_offers(access_token, hotel_ids, check_in_date, check_out_date, adu
             return response.json()
         elif response.status_code == 429:  # Rate limit exceeded
             print(f"Rate limit exceeded, retrying in {2 ** i} seconds...")
-            time.sleep(2 ** i)
+            time.sleep(10 ** i)
         else:
             break
     raise Exception("Failed to retrieve hotel offers: " + response.text)
@@ -103,8 +103,8 @@ def process_city(access_token, state, city_code, city_name):
         print(f"Error processing city {city_code} in state {state_full_name}: {e}")
 
 # Replace with your Amadeus API key and secret
-api_key = "jCSqGQTvlq8BX3KYG13at32dEBJA03n1"
-api_secret = "bgBBcpnJF4A3wCDq"
+api_key = "WV22KiKdTSzwAg14CMgf5cMNzeAJQHgh"
+api_secret = "bLQgKxilAzelA76N"
 
 hotel_prices = []
 
